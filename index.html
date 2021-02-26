@@ -12,6 +12,7 @@
   <p id="version"><b>Version:</b> </p>
   <p id="isInClient"><b>isInClient:</b> </p>
   <p id="accessToken"><b>AccessToken:</b> </p>
+  <p id="idToken"><b>IDToken:</b> </p>
   <img id="pictureUrl">
   <p id="userId"><b>userId:</b> </p>
   <p id="displayName"><b>displayName:</b> </p>
@@ -115,6 +116,7 @@
       document.getElementById("language").append(liff.getLanguage())
       document.getElementById("version").append(liff.getVersion())
       document.getElementById("accessToken").append(liff.getAccessToken())
+      document.getElementById("idToken").append(liff.getIDToken())
       document.getElementById("isInClient").append(liff.isInClient())
       if (liff.isInClient()) {
         document.getElementById("btnLogOut").style.display = "none"
